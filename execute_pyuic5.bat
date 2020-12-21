@@ -1,0 +1,1 @@
+pyuic5 -x view\qt_main_design.ui -o view\main_view.py
