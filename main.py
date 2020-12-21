@@ -13,6 +13,11 @@ if __name__ == "__main__":
     # create main controller
 
     main_controller = MainWindowController(ui)
+
     # start main window
     MainWindow.show()
     sys.exit(app.exec_())
+
+
+def dummy_test():
+    print("DUMMY TEST")
