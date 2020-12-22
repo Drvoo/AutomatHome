@@ -1,2 +1,7 @@
 
 .idea/dictionaries/alexa.xml
+.idea/AutomatHome.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/vcs.xml
+*.xml
+*.iml
