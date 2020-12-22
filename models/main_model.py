@@ -1,6 +1,7 @@
 import threading
 import time
 import random
+from InputOutput import HWInterface
 
 class MainModel:
     def __init__(self, controller):
@@ -21,6 +22,11 @@ class MainModel:
             "motion_detector_3": False,
             "small_garage": False
         }
+        self.hw_interface = None
+        try:
+            self.hw_interface = HWInterface.HWInterface()
+        except Exception as e:
+            print(str(e))
 
     def start_work(self):
         self.working = True
@@ -32,6 +38,10 @@ class MainModel:
             for name, status in self.dict_rb_buttons.items():
                 # TODO: Check signals of raspbarrypi
                 self.dict_rb_buttons[name] = bool(random.randrange(0, 2))
+                if self.hw_interface is not None:
+                    self.hw_interface.update_device_status()
+                    self.dict_rb_buttons = self.hw_interface.dictDeviceStatus
+
             self.controller.update_signals(self.dict_rb_buttons)
             time.sleep(2)
         pass

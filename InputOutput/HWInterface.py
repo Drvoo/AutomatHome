@@ -18,18 +18,18 @@ class HWInterface:
         self.GPIODataInput = 22
 
         self.dictDeviceStatus = {
-            "Garagentor A": False,
-            "Garagentor B": False,
-            "Kellertuer": False,
-            "dev 04": False,
-            "dev 05": False,
-            "dev 06": False,
-            "dev 07": False,
-            "dev 08": False,
-            "dev 09": False,
-            "dev 10": False,
-            "dev 11": False,
-            "dev 12": False
+            "large_garage": False,
+            "celler_door": False,
+            "attic_door": False,
+            "garden_door": False,
+            "garden_door_a": False,
+            "garden_door_b": False,
+            "light_garage": False,
+            "lights_attic": False,
+            "motion_detector_1": False,
+            "motion_detector_2": False,
+            "motion_detector_3": False,
+            "small_garage": False
         }
 
         # GPIO.setmode(GPIO.BOARD) using physical pin numbering e.g. pin 11 for GPIO 17
