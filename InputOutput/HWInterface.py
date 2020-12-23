@@ -1,8 +1,6 @@
 # imports
 import os
-
-if os.name == "posix":
-    import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 
 print("OS Name: " + os.name)
 
@@ -34,23 +32,28 @@ class HWInterface:
 
         # GPIO.setmode(GPIO.BOARD) using physical pin numbering e.g. pin 11 for GPIO 17
         # GPIO.setmode(GPIO.BCM) using GPIO numbering scheme eg. "pin 17" for GPIO 17
+        print("GPIO: " + str(GPIO.BCM))
         GPIO.setmode(GPIO.BCM)
         # setting up the GPIOs, no need for pull up/downs since only CMOS drivers, inputs are employed
-        for AddessBit in self.GPIOs4BitAddress:
-            GPIO.setup(AddessBit, GPIO.OUT, pull_up_down=None, initial=GPIO.LOW)
-
-        GPIO.setup(self.GPIODataInput, GPIO.IN, pull_up_down=None)
+        try:
+            for AddessBit in self.GPIOs4BitAddress:
+                print("AddressBit: ")
+                print("GPIO.OUT: " + str(GPIO.OUT))
+                print("GPIO.LOW: " + str(GPIO.LOW))
+                GPIO.setup(AddessBit, GPIO.OUT, initial=GPIO.LOW)
+        except Exception as e:
+            print("Exception during GPIO.setup address")
+            raise e
+        try:
+            GPIO.setup(self.GPIODataInput, GPIO.IN)
+        except Exception as e:
+            print("Exception during GPIO.setup data input")
+            raise e
 
     def update_device_status(self):
-        address = 0
-        for Device in self.dictDeviceStatus:
-            binaddress = [int(x) for x in list('{0:0b}'.format(address))]
-            for i in range(0, len(self.GPIOs4BitAddress)):
+        for address, Device in enumerate(self.dictDeviceStatus):
+            binaddress = [int(x) for x in list('{0:0b}'.format(address+16))][1:]
+            for i in range(len(self.GPIOs4BitAddress)):
                 GPIO.output(self.GPIOs4BitAddress[i], bool(binaddress[i]))
 
-            if GPIO.input(self.GPIODataInput) == GPIO.HIGH:
-                self.dictDeviceStatus[Device] = True
-            else:
-                self.dictDeviceStatus[Device] = False
-
-            address += 1
+            self.dictDeviceStatus[Device] = GPIO.input(self.GPIODataInput) == GPIO.HIGH

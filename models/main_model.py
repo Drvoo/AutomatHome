@@ -26,7 +26,7 @@ class MainModel:
         try:
             self.hw_interface = HWInterface.HWInterface()
         except Exception as e:
-            print(str(e))
+            print("Could not instantiate HWInterface: " + str(e))
 
     def start_work(self):
         self.working = True
@@ -35,14 +35,11 @@ class MainModel:
 
     def work(self):
         while self.working:
-            for name, status in self.dict_rb_buttons.items():
-                # TODO: Check signals of raspbarrypi
-                self.dict_rb_buttons[name] = bool(random.randrange(0, 2))
-                if self.hw_interface is not None:
-                    self.hw_interface.update_device_status()
-                    self.dict_rb_buttons = self.hw_interface.dictDeviceStatus
-
-            self.controller.update_signals(self.dict_rb_buttons)
+            if self.hw_interface is not None:
+                print("checking...")
+                self.hw_interface.update_device_status()
+                self.dict_rb_buttons = self.hw_interface.dictDeviceStatus
+                self.controller.update_signals(self.dict_rb_buttons)
             time.sleep(2)
         pass
 
