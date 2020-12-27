@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(50, 50, 50);
+   <string notr="true">background-color: rgb(50,50,70);
 selection-color: rgb(200, 200, 200);
 </string>
   </property>
@@ -45,22 +45,22 @@ selection-color: rgb(200, 200, 200);
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 18pt &quot;MS Serif&quot;;
+font: 25pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  18px;
-    height:                 18px;
-    border-radius:          10px;
+    width:                  30px;
+    height:                 30px;
+    border-radius:          0px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       rgb(255, 174, 66);
-    border:                 2px solid rgb(255, 174, 66); 
+    background-color:       rgb(255, 66, 66);
+    border:                 0px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
     background-color:       rgb(50, 50, 50);
-    border:                 2px solid (50, 50, 50);
+    border:                 0px solid (50, 50, 50);
 }
 </string>
           </property>
@@ -99,27 +99,30 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 18pt &quot;MS Serif&quot;;
+font: 25pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  18px;
-    height:                 18px;
-    border-radius:          10px;
+    width:                  30px;
+    height:                 30px;
+    border-radius:          0px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       rgb(255, 174, 66);
-    border:                 2px solid rgb(255, 174, 66); 
+    background-color:       rgb(255, 66, 66);
+    border:                 0px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
     background-color:       rgb(50, 50, 50);
-    border:                 2px solid (50, 50, 50);
+    border:                 0px solid (50, 50, 50);
 }
 </string>
           </property>
           <property name="text">
            <string>Kellertür</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
           </property>
           <property name="autoExclusive">
            <bool>false</bool>
@@ -150,27 +153,29 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 18pt &quot;MS Serif&quot;;
+font: 25pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  18px;
-    height:                 18px;
-    border-radius:          10px;
+    width:                  30px;
+    height:                 30px;
+    border-radius:          0px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       rgb(255, 174, 66);
-    border:                 2px solid rgb(255, 174, 66); 
+    background-color:       rgb(255, 66, 66);
+    border:                 0px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
     background-color:       rgb(50, 50, 50);
-    border:                 2px solid (50, 50, 50);
-}
-</string>
+    border:                 0px solid (50, 50, 50);
+}</string>
           </property>
           <property name="text">
            <string>Licht Dachboden</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
           </property>
           <property name="autoExclusive">
            <bool>true</bool>
@@ -198,28 +203,30 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 18pt &quot;MS Serif&quot;;
+font: 25pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  18px;
-    height:                 18px;
-    border-radius:          10px;
+    width:                  30px;
+    height:                 30px;
+    border-radius:          0px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       rgb(255, 174, 66);
-    border:                 2px solid rgb(255, 174, 66); 
+    background-color:       rgb(255, 66, 66);
+    border:                 0px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
     background-color:       rgb(50, 50, 50);
-    border:                 2px solid (50, 50, 50);
+    border:                 0px solid (50, 50, 50);
 }
-
 </string>
           </property>
           <property name="text">
            <string>Dachbodentür</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
           </property>
           <property name="autoExclusive">
            <bool>false</bool>
@@ -247,27 +254,27 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 18pt &quot;MS Serif&quot;;
+font: 25pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  18px;
-    height:                 18px;
-    border-radius:          10px;
+    width:                  30px;
+    height:                 30px;
+    border-radius:          0px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       rgb(255, 174, 66);
-    border:                 2px solid rgb(255, 174, 66); 
+    background-color:       rgb(255, 66, 66);
+    border:                 0px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
     background-color:       rgb(50, 50, 50);
-    border:                 2px solid (50, 50, 50);
+    border:                 0px solid (50, 50, 50);
 }
 </string>
           </property>
           <property name="text">
-           <string>Gartentür B</string>
+           <string>Gartentür Hinten</string>
           </property>
           <property name="autoExclusive">
            <bool>false</bool>
@@ -295,22 +302,22 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 18pt &quot;MS Serif&quot;;
+font: 25pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  18px;
-    height:                 18px;
-    border-radius:          10px;
+    width:                  30px;
+    height:                 30px;
+    border-radius:          0px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       rgb(255, 174, 66);
-    border:                 2px solid rgb(255, 174, 66); 
+    background-color:       rgb(255, 66, 66);
+    border:                 0px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
     background-color:       rgb(50, 50, 50);
-    border:                 2px solid (50, 50, 50);
+    border:                 0px solid (50, 50, 50);
 }
 </string>
           </property>
@@ -360,27 +367,30 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 18pt &quot;MS Serif&quot;;
+font: 25pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  18px;
-    height:                 18px;
-    border-radius:          10px;
+    width:                  30px;
+    height:                 30px;
+    border-radius:          0px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       rgb(255, 174, 66);
-    border:                 2px solid rgb(255, 174, 66); 
+    background-color:       rgb(255, 66, 66);
+    border:                 0px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
     background-color:       rgb(50, 50, 50);
-    border:                 2px solid (50, 50, 50);
+    border:                 0px solid (50, 50, 50);
 }
 </string>
           </property>
           <property name="text">
            <string>Große Garage</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
           </property>
           <property name="autoExclusive">
            <bool>false</bool>
@@ -408,22 +418,22 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 18pt &quot;MS Serif&quot;;
+font: 25pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  18px;
-    height:                 18px;
-    border-radius:          10px;
+    width:                  30px;
+    height:                 30px;
+    border-radius:          0px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       rgb(255, 174, 66);
-    border:                 2px solid rgb(255, 174, 66); 
+    background-color:       rgb(255, 66, 66);
+    border:                 0px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
     background-color:       rgb(50, 50, 50);
-    border:                 2px solid (50, 50, 50);
+    border:                 0px solid (50, 50, 50);
 }
 </string>
           </property>
@@ -462,22 +472,22 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 18pt &quot;MS Serif&quot;;
+font: 25pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  18px;
-    height:                 18px;
-    border-radius:          10px;
+    width:                  30px;
+    height:                 30px;
+    border-radius:          0px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       rgb(255, 174, 66);
-    border:                 2px solid rgb(255, 174, 66); 
+    background-color:       rgb(255, 66, 66);
+    border:                 0px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
     background-color:       rgb(50, 50, 50);
-    border:                 2px solid (50, 50, 50);
+    border:                 0px solid (50, 50, 50);
 }
 </string>
           </property>
@@ -510,27 +520,27 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 18pt &quot;MS Serif&quot;;
+font: 25pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  18px;
-    height:                 18px;
-    border-radius:          10px;
+    width:                  30px;
+    height:                 30px;
+    border-radius:          0px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       rgb(255, 174, 66);
-    border:                 2px solid rgb(255, 174, 66); 
+    background-color:       rgb(255, 66, 66);
+    border:                 0px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
     background-color:       rgb(50, 50, 50);
-    border:                 2px solid (50, 50, 50);
+    border:                 0px solid (50, 50, 50);
 }
 </string>
           </property>
           <property name="text">
-           <string>Gartentür A</string>
+           <string>Gartentür Vorne</string>
           </property>
           <property name="autoExclusive">
            <bool>false</bool>
@@ -558,22 +568,22 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 18pt &quot;MS Serif&quot;;
+font: 25pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  18px;
-    height:                 18px;
-    border-radius:          10px;
+    width:                  30px;
+    height:                 30px;
+    border-radius:          0px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       rgb(255, 174, 66);
-    border:                 2px solid rgb(255, 174, 66); 
+    background-color:       rgb(255, 66, 66);
+    border:                 0px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
     background-color:       rgb(50, 50, 50);
-    border:                 2px solid (50, 50, 50);
+    border:                 0px solid (50, 50, 50);
 }
 </string>
           </property>
@@ -606,22 +616,22 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 18pt &quot;MS Serif&quot;;
+font: 25pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  18px;
-    height:                 18px;
-    border-radius:          10px;
+    width:                  30px;
+    height:                 30px;
+    border-radius:          0px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       rgb(255, 174, 66);
-    border:                 2px solid rgb(255, 174, 66); 
+    background-color:       rgb(255, 66, 66);
+    border:                 0px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
     background-color:       rgb(50, 50, 50);
-    border:                 2px solid (50, 50, 50);
+    border:                 0px solid (50, 50, 50);
 }
 </string>
           </property>
