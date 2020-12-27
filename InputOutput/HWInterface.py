@@ -1,6 +1,7 @@
 # imports
 import os
 import RPi.GPIO as GPIO
+import time
 
 print("OS Name: " + os.name)
 
@@ -12,7 +13,7 @@ class HWInterface:
             print("Can't import module RPi.GPIO.\n" +
                   "Is this a Raspberry Pi? If yes, install the module.")
             raise Exception("HWInterface can only run on posix operating system")
-        self.GPIOs4BitAddress = [2, 3, 4, 17]
+        self.GPIOs4BitAddress = [17, 4, 3, 2]
         self.GPIODataInput = 22
 
         self.dictDeviceStatus = {
@@ -45,7 +46,7 @@ class HWInterface:
             print("Exception during GPIO.setup address")
             raise e
         try:
-            GPIO.setup(self.GPIODataInput, GPIO.IN)
+            GPIO.setup(self.GPIODataInput, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
         except Exception as e:
             print("Exception during GPIO.setup data input")
             raise e
@@ -55,5 +56,16 @@ class HWInterface:
             binaddress = [int(x) for x in list('{0:0b}'.format(address+16))][1:]
             for i in range(len(self.GPIOs4BitAddress)):
                 GPIO.output(self.GPIOs4BitAddress[i], bool(binaddress[i]))
-
+            time.sleep(0.02)
             self.dictDeviceStatus[Device] = GPIO.input(self.GPIODataInput) == GPIO.HIGH
+            time.sleep(0.02)
+            print(str(self.dictDeviceStatus[Device]))
+            print(GPIO.input(self.GPIODataInput))
+            dummy = 1
+
+if __name__ == "__main__":
+    hw_interface = HWInterface()
+    while True:
+        time.sleep(1)
+        hw_interface.update_device_status()
+    

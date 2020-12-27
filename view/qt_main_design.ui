@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>885</width>
-    <height>662</height>
+    <width>800</width>
+    <height>480</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,24 +20,23 @@ selection-color: rgb(200, 200, 200);
   </property>
   <widget class="QWidget" name="widget">
    <layout class="QGridLayout" name="gridLayout_2">
-    <item row="2" column="0">
-     <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="0">
-       <widget class="QCalendarWidget" name="calendarWidget">
-        <property name="styleSheet">
-         <string notr="true">color: rgb(204, 204, 204);
-alternate-background-color: rgb(255, 159, 146);
-font: 15pt &quot;MS Serif&quot;;
-selection-background-color: rgb(255, 159, 146);</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
     <item row="0" column="0">
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <spacer name="verticalSpacer_13">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
         <item>
          <widget class="QRadioButton" name="rb_small_garage">
           <property name="enabled">
@@ -46,38 +45,51 @@ selection-background-color: rgb(255, 159, 146);</string>
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 15pt &quot;MS Serif&quot;;
+font: 18pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  10px;
-    height:                 10px;
-    border-radius:          7px;
+    width:                  18px;
+    height:                 18px;
+    border-radius:          10px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       red;
-    border:                 2px solid rgb(255, 41, 41); 
+    background-color:       rgb(255, 174, 66);
+    border:                 2px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
-    background-color:       rgb(0, 255, 0);
-    border:                 2px solid rgb(41, 255, 41);
+    background-color:       rgb(50, 50, 50);
+    border:                 2px solid (50, 50, 50);
 }
 </string>
           </property>
           <property name="text">
-           <string>kleine Garage</string>
+           <string>Kleine Garage</string>
           </property>
           <property name="checkable">
            <bool>true</bool>
           </property>
           <property name="checked">
-           <bool>false</bool>
+           <bool>true</bool>
           </property>
           <property name="autoExclusive">
            <bool>false</bool>
           </property>
          </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
         </item>
         <item>
          <widget class="QRadioButton" name="rb_celler_door">
@@ -87,22 +99,22 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 15pt &quot;MS Serif&quot;;
+font: 18pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  10px;
-    height:                 10px;
-    border-radius:          7px;
+    width:                  18px;
+    height:                 18px;
+    border-radius:          10px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       red;
-    border:                 2px solid rgb(255, 41, 41); 
+    background-color:       rgb(255, 174, 66);
+    border:                 2px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
-    background-color:       rgb(0, 255, 0);
-    border:                 2px solid rgb(41, 255, 41);
+    background-color:       rgb(50, 50, 50);
+    border:                 2px solid (50, 50, 50);
 }
 </string>
           </property>
@@ -115,6 +127,19 @@ QRadioButton::indicator:unchecked {
          </widget>
         </item>
         <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
          <widget class="QRadioButton" name="rb_lights_attic">
           <property name="enabled">
            <bool>false</bool>
@@ -125,22 +150,22 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 15pt &quot;MS Serif&quot;;
+font: 18pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  10px;
-    height:                 10px;
-    border-radius:          7px;
+    width:                  18px;
+    height:                 18px;
+    border-radius:          10px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       red;
-    border:                 2px solid rgb(255, 41, 41); 
+    background-color:       rgb(255, 174, 66);
+    border:                 2px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
-    background-color:       rgb(0, 255, 0);
-    border:                 2px solid rgb(41, 255, 41);
+    background-color:       rgb(50, 50, 50);
+    border:                 2px solid (50, 50, 50);
 }
 </string>
           </property>
@@ -153,6 +178,19 @@ QRadioButton::indicator:unchecked {
          </widget>
         </item>
         <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
          <widget class="QRadioButton" name="rb_attic_door">
           <property name="enabled">
            <bool>false</bool>
@@ -160,23 +198,24 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 15pt &quot;MS Serif&quot;;
+font: 18pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  10px;
-    height:                 10px;
-    border-radius:          7px;
+    width:                  18px;
+    height:                 18px;
+    border-radius:          10px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       red;
-    border:                 2px solid rgb(255, 41, 41); 
+    background-color:       rgb(255, 174, 66);
+    border:                 2px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
-    background-color:       rgb(0, 255, 0);
-    border:                 2px solid rgb(41, 255, 41);
+    background-color:       rgb(50, 50, 50);
+    border:                 2px solid (50, 50, 50);
 }
+
 </string>
           </property>
           <property name="text">
@@ -188,6 +227,19 @@ QRadioButton::indicator:unchecked {
          </widget>
         </item>
         <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
          <widget class="QRadioButton" name="rb_garden_door_b">
           <property name="enabled">
            <bool>false</bool>
@@ -195,22 +247,22 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 15pt &quot;MS Serif&quot;;
+font: 18pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  10px;
-    height:                 10px;
-    border-radius:          7px;
+    width:                  18px;
+    height:                 18px;
+    border-radius:          10px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       red;
-    border:                 2px solid rgb(255, 41, 41); 
+    background-color:       rgb(255, 174, 66);
+    border:                 2px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
-    background-color:       rgb(0, 255, 0);
-    border:                 2px solid rgb(41, 255, 41);
+    background-color:       rgb(50, 50, 50);
+    border:                 2px solid (50, 50, 50);
 }
 </string>
           </property>
@@ -223,6 +275,19 @@ QRadioButton::indicator:unchecked {
          </widget>
         </item>
         <item>
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
          <widget class="QRadioButton" name="rb_motion_detector_2">
           <property name="enabled">
            <bool>false</bool>
@@ -230,22 +295,22 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 15pt &quot;MS Serif&quot;;
+font: 18pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  10px;
-    height:                 10px;
-    border-radius:          7px;
+    width:                  18px;
+    height:                 18px;
+    border-radius:          10px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       red;
-    border:                 2px solid rgb(255, 41, 41); 
+    background-color:       rgb(255, 174, 66);
+    border:                 2px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
-    background-color:       rgb(0, 255, 0);
-    border:                 2px solid rgb(41, 255, 41);
+    background-color:       rgb(50, 50, 50);
+    border:                 2px solid (50, 50, 50);
 }
 </string>
           </property>
@@ -257,10 +322,36 @@ QRadioButton::indicator:unchecked {
           </property>
          </widget>
         </item>
+        <item>
+         <spacer name="verticalSpacer_12">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
        </layout>
       </item>
       <item>
        <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <spacer name="verticalSpacer_14">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
         <item>
          <widget class="QRadioButton" name="rb_large_garage">
           <property name="enabled">
@@ -269,32 +360,45 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 15pt &quot;MS Serif&quot;;
+font: 18pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  10px;
-    height:                 10px;
-    border-radius:          7px;
+    width:                  18px;
+    height:                 18px;
+    border-radius:          10px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       red;
-    border:                 2px solid rgb(255, 41, 41); 
+    background-color:       rgb(255, 174, 66);
+    border:                 2px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
-    background-color:       rgb(0, 255, 0);
-    border:                 2px solid rgb(41, 255, 41);
+    background-color:       rgb(50, 50, 50);
+    border:                 2px solid (50, 50, 50);
 }
 </string>
           </property>
           <property name="text">
-           <string>große Garage</string>
+           <string>Große Garage</string>
           </property>
           <property name="autoExclusive">
            <bool>false</bool>
           </property>
          </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
         </item>
         <item>
          <widget class="QRadioButton" name="rb_garden_door">
@@ -304,22 +408,22 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 15pt &quot;MS Serif&quot;;
+font: 18pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  10px;
-    height:                 10px;
-    border-radius:          7px;
+    width:                  18px;
+    height:                 18px;
+    border-radius:          10px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       red;
-    border:                 2px solid rgb(255, 41, 41); 
+    background-color:       rgb(255, 174, 66);
+    border:                 2px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
-    background-color:       rgb(0, 255, 0);
-    border:                 2px solid rgb(41, 255, 41);
+    background-color:       rgb(50, 50, 50);
+    border:                 2px solid (50, 50, 50);
 }
 </string>
           </property>
@@ -338,6 +442,19 @@ QRadioButton::indicator:unchecked {
          </widget>
         </item>
         <item>
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
          <widget class="QRadioButton" name="rb_light_garage">
           <property name="enabled">
            <bool>false</bool>
@@ -345,22 +462,22 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 15pt &quot;MS Serif&quot;;
+font: 18pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  10px;
-    height:                 10px;
-    border-radius:          7px;
+    width:                  18px;
+    height:                 18px;
+    border-radius:          10px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       red;
-    border:                 2px solid rgb(255, 41, 41); 
+    background-color:       rgb(255, 174, 66);
+    border:                 2px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
-    background-color:       rgb(0, 255, 0);
-    border:                 2px solid rgb(41, 255, 41);
+    background-color:       rgb(50, 50, 50);
+    border:                 2px solid (50, 50, 50);
 }
 </string>
           </property>
@@ -373,6 +490,19 @@ QRadioButton::indicator:unchecked {
          </widget>
         </item>
         <item>
+         <spacer name="verticalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
          <widget class="QRadioButton" name="rb_garden_door_a">
           <property name="enabled">
            <bool>false</bool>
@@ -380,22 +510,22 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 15pt &quot;MS Serif&quot;;
+font: 18pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  10px;
-    height:                 10px;
-    border-radius:          7px;
+    width:                  18px;
+    height:                 18px;
+    border-radius:          10px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       red;
-    border:                 2px solid rgb(255, 41, 41); 
+    background-color:       rgb(255, 174, 66);
+    border:                 2px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
-    background-color:       rgb(0, 255, 0);
-    border:                 2px solid rgb(41, 255, 41);
+    background-color:       rgb(50, 50, 50);
+    border:                 2px solid (50, 50, 50);
 }
 </string>
           </property>
@@ -408,6 +538,19 @@ QRadioButton::indicator:unchecked {
          </widget>
         </item>
         <item>
+         <spacer name="verticalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
          <widget class="QRadioButton" name="rb_motion_detector_1">
           <property name="enabled">
            <bool>false</bool>
@@ -415,22 +558,22 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 15pt &quot;MS Serif&quot;;
+font: 18pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  10px;
-    height:                 10px;
-    border-radius:          7px;
+    width:                  18px;
+    height:                 18px;
+    border-radius:          10px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       red;
-    border:                 2px solid rgb(255, 41, 41); 
+    background-color:       rgb(255, 174, 66);
+    border:                 2px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
-    background-color:       rgb(0, 255, 0);
-    border:                 2px solid rgb(41, 255, 41);
+    background-color:       rgb(50, 50, 50);
+    border:                 2px solid (50, 50, 50);
 }
 </string>
           </property>
@@ -443,6 +586,19 @@ QRadioButton::indicator:unchecked {
          </widget>
         </item>
         <item>
+         <spacer name="verticalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
          <widget class="QRadioButton" name="rb_motion_detector_3">
           <property name="enabled">
            <bool>false</bool>
@@ -450,22 +606,22 @@ QRadioButton::indicator:unchecked {
           <property name="styleSheet">
            <string notr="true">QRadioButton{
 color: rgb(204, 204, 204);
-font: 15pt &quot;MS Serif&quot;;
+font: 18pt &quot;MS Serif&quot;;
 }
 QRadioButton::indicator {
-    width:                  10px;
-    height:                 10px;
-    border-radius:          7px;
+    width:                  18px;
+    height:                 18px;
+    border-radius:          10px;
 }
 
 QRadioButton::indicator:checked {
-    background-color:       red;
-    border:                 2px solid rgb(255, 41, 41); 
+    background-color:       rgb(255, 174, 66);
+    border:                 2px solid rgb(255, 174, 66); 
 }
 
 QRadioButton::indicator:unchecked {
-    background-color:       rgb(0, 255, 0);
-    border:                 2px solid rgb(41, 255, 41);
+    background-color:       rgb(50, 50, 50);
+    border:                 2px solid (50, 50, 50);
 }
 </string>
           </property>
@@ -477,59 +633,18 @@ QRadioButton::indicator:unchecked {
           </property>
          </widget>
         </item>
-       </layout>
-      </item>
-     </layout>
-    </item>
-    <item row="3" column="0">
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_4">
         <item>
-         <widget class="QPushButton" name="pushButton_6">
-          <property name="text">
-           <string>PushButton</string>
+         <spacer name="verticalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
           </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_4">
-          <property name="text">
-           <string>PushButton</string>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
           </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_5">
-          <property name="text">
-           <string>PushButton</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_3">
-        <item>
-         <widget class="QPushButton" name="pushButton_3">
-          <property name="text">
-           <string>PushButton</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton">
-          <property name="text">
-           <string>PushButton</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_2">
-          <property name="text">
-           <string>PushButton</string>
-          </property>
-         </widget>
+         </spacer>
         </item>
        </layout>
       </item>
@@ -539,102 +654,5 @@ QRadioButton::indicator:unchecked {
   </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>pushButton_6</sender>
-   <signal>clicked()</signal>
-   <receiver>rb_small_garage</receiver>
-   <slot>toggle()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>232</x>
-     <y>378</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>44</x>
-     <y>26</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_4</sender>
-   <signal>clicked()</signal>
-   <receiver>rb_celler_door</receiver>
-   <slot>toggle()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>141</x>
-     <y>414</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>85</x>
-     <y>54</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_5</sender>
-   <signal>clicked()</signal>
-   <receiver>rb_lights_attic</receiver>
-   <slot>toggle()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>160</x>
-     <y>461</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>142</x>
-     <y>85</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_3</sender>
-   <signal>clicked()</signal>
-   <receiver>rb_large_garage</receiver>
-   <slot>toggle()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>465</x>
-     <y>373</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>443</x>
-     <y>25</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>rb_garden_door</receiver>
-   <slot>toggle()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>502</x>
-     <y>408</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>483</x>
-     <y>51</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>rb_light_garage</receiver>
-   <slot>toggle()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>530</x>
-     <y>454</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>511</x>
-     <y>82</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

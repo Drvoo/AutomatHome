@@ -40,7 +40,7 @@ class MainModel:
                 self.hw_interface.update_device_status()
                 self.dict_rb_buttons = self.hw_interface.dictDeviceStatus
                 self.controller.update_signals(self.dict_rb_buttons)
-            time.sleep(2)
+            time.sleep(0.2)
         pass
 
     def stop_work(self):
